@@ -1,0 +1,17 @@
+streamlit
+langchain_ollama
+langchain_core
+langchain_community
+langchain_huggingface
+pypdf
+python-docx
+faiss-cpu
+huggingface-hub
+numpy
+pandas
+openpyxl
+python-pptx
+pyperclip
+uvicorn
+fastapi
+sentence-transformers
