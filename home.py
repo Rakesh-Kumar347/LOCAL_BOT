@@ -6,8 +6,8 @@ def main_page():
     """
     Displays the main page with a large title and 6 interactive cards for navigation.
     """
-    st.markdown("""<h1 style='text-align: center; font-size: 100px; color: #2C3E50;'>LOBO</h1>""", unsafe_allow_html=True)
-    st.write("### Welcome to LOBO! Click on a card to explore.")
+    st.markdown("""<h1 style='text-align: center; font-size: 150px; color: #2C3E50;'>LOBO</h1>""", unsafe_allow_html=True)
+    st.markdown('<h3 style="color: #2C3E50;">Welcome to LOBO! Click on a card to explore.</h3>', unsafe_allow_html=True)
 
     # Create 6 large buttons (cards) in 2 rows with 3 columns each
     col1, col2 = st.columns(2, gap='large')  # Adjust column width to move left buttons more left
@@ -46,8 +46,8 @@ def main_page():
         if st.button("""**CHATBOT**\n\n An intelligent digital assistant designed to enhance user interaction with AI-driven responses. Engage in seamless, human-like conversations and explore its powerful capabilities.
         """, use_container_width=True):
             os.system("streamlit run app.py")
-        if st.button("Card 2"):
-            st.session_state.page = "Page 2"
+        if st.button("SQL GENERATOR", use_container_width=True):
+            os.system("streamlit run sql_generator.py")
         if st.button("Card 3"):
             st.session_state.page = "Page 3"
 
